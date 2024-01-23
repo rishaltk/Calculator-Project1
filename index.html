@@ -11,9 +11,9 @@
         <input type="text" id="display" readonly>
         <div id="buttons">
             
-            <button onclick="clearDisplay('clearDisplay')">C</button>
-            <button id="backspace">⟵</button>
-            <button id="percentage" onclick="calculatePercentage()">%</button>
+            <button class="op" onclick="clearDisplay('clearDisplay')">C</button>
+            <button class="op" id="backspace">⟵</button>
+            <button class="op" id="percentage" onclick="calculatePercentage()">%</button>
             <button id="divide">÷</button>
 
             <button onclick="appendToDisplay('7')">7</button>
@@ -32,11 +32,11 @@
             <button onclick="appendToDisplay('2')">2</button>
             <button onclick="appendToDisplay('3')">3</button>
             <button id="add">+</button>
-                  
+            
+            <button id="toggleMode" onclick="toggleDarkMode()">☾</button>
             <button id="zero" onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button id="equals" onclick="calculate()">=</button>
-            <button id="toggleMode" onclick="toggleDarkMode()">☾</button>
         </div>
             
         </div>
