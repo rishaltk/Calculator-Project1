@@ -6,7 +6,17 @@ body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: white;
+    transition: background-color 0.5s, color 0.5s;
 }
+.dark-mode {
+    background-color: black;
+    color: #fff;
+}
+.dark-mode #calculator {
+    background-color: white;
+    color: black;
+}
+  
 
 #calculator {
     background-color: black;
@@ -31,6 +41,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    
 }
 
 button {
@@ -38,10 +49,14 @@ button {
     height: 60px;
     font-size: 24px;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     background-color: #454545;
     color: white;
     cursor: pointer;
+}
+#togglemode{
+    height: 100px;
+
 }
 
 #zero {
