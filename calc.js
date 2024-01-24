@@ -31,6 +31,7 @@ function calculatePercentage() {
     }
 }
 
+
 let darkMode = false; // Initial dark mode state
 
 function toggleDarkMode() {
@@ -75,10 +76,14 @@ function calculate() {
             default:
                 break;
         }
-        currentInput = '';
+        // Set the result as the new currentInput for potential chaining
+        currentInput = display.value;
         currentOperator = '';
     }
 }
+
+
+
 // Event listeners for each button
 document.getElementById('add').addEventListener('click', () => setOperator('+'));
 document.getElementById('subtract').addEventListener('click', () => setOperator('-'));
